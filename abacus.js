@@ -112,8 +112,8 @@ function Abacus(parentDivId, type) {
   var abacusCtrl = new  AbacusCtrl(type);
   var canvas;
   var divId = parentDivId;
-  var beadColor = "rgba(133, 178, 255, 1.0)";
-  var hooveredBeadColor = "rgba(170, 215, 255, 1.0)";
+  var beadColor = "rgba(0, 0, 0, 1.0)";
+  var hooveredBeadColor = "rgba(100, 100, 100, 1.0)";
   var hooveredElement = -1;
   var hooveredBead = -1;
   var uiElements = new Array();
