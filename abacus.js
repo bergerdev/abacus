@@ -126,7 +126,7 @@ function Abacus(parentDivId, type) {
     canvas = document.createElement('canvas');
     if(!canvas) console.log("Abacus error: can not create a canvas element");
     canvas.id = parentDivId + "_Abacus";
-    canvas.width = 0 + abacusCtrl.beadLines * abacusCtrl.beadSpacing;
+    canvas.width = 40 + (abacusCtrl.beadLines-2) * abacusCtrl.beadSpacing;
     canvas.height= 60 + (abacusCtrl.beadPerLine+2) * abacusCtrl.beadHeight;
     document.body.appendChild(canvas);
     var parent = document.getElementById(divId);
