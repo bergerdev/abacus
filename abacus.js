@@ -158,14 +158,14 @@ function Abacus(parentDivId, type) {
       var dn = new UIElement(nodePosX, nodePosY+2, abacusCtrl.beadWidth, abacusCtrl.beadHeight-4, 0, nodeId, 0, 0);
 
       ctx.fillStyle = "rgba(60, 60, 60, 0.3)";
-      drawRoundRectFilled(ctx, dn.x+4, dn.y+4, dn.x2-dn.x, dn.y2-dn.y, 15);
+      //drawRoundRectFilled(ctx, dn.x+4, dn.y+4, dn.x2-dn.x, dn.y2-dn.y, 15);
       ctx.fillStyle = beadColor;
      
       if(nodeId === hooveredBead) {
         ctx.fillStyle=hooveredBeadColor;
       } 
-      //drawRoundRectFilled(ctx, dn.x, dn.y, dn.x2-dn.x, dn.y2-dn.y, 15);
-      //ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
+      drawRoundRectFilled(ctx, dn.x, dn.y, dn.x2-dn.x, dn.y2-dn.y, 15);
+      ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
       
     uiElements.push(dn);
     if (false) {
