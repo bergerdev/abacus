@@ -237,26 +237,26 @@ function Abacus(parentDivId, type) {
       }
     }
     // draw frame
-    ctx.strokeStyle = '#000000';
-    ctx.lineWidth = 5;
-    for(var i=0; i < abacusCtrl.beadLines; i++) {
-      var x = -30 + abacusCtrl.beadLines * abacusCtrl.beadSpacing - i * abacusCtrl.beadSpacing;
-      var y = 20 + (abacusCtrl.beadPerLine+2) * abacusCtrl.beadHeight
-      ctx.beginPath();
-      ctx.moveTo(x, 20);
-      ctx.lineTo(x, y);
-      ctx.stroke();
-    }
-    for(var j=0; j < 3; j++) {
-      var y = 20;
-      if(j === 1) y = 20 + (abacusCtrl.beadPerLine - abacusCtrl.beadSep) * abacusCtrl.beadHeight;
-      if(j === 2) y = 20 + (abacusCtrl.beadPerLine+2) * abacusCtrl.beadHeight;
-      ctx.beginPath();
-      ctx.moveTo(20, y);
-      ctx.lineTo(640, y);
-      ctx.stroke();
-    }
-    ctx.lineWidth = 1;
+    //ctx.strokeStyle = '#000000';
+    //ctx.lineWidth = 5;
+    //for(var i=0; i < abacusCtrl.beadLines; i++) {
+      //var x = -30 + abacusCtrl.beadLines * abacusCtrl.beadSpacing - i * abacusCtrl.beadSpacing;
+      //var y = 20 + (abacusCtrl.beadPerLine+2) * abacusCtrl.beadHeight
+      //ctx.beginPath();
+      //ctx.moveTo(x, 20);
+      //ctx.lineTo(x, y);
+      //ctx.stroke();
+    //}
+    //for(var j=0; j < 3; j++) {
+      //var y = 20;
+      //if(j === 1) y = 20 + (abacusCtrl.beadPerLine - abacusCtrl.beadSep) * abacusCtrl.beadHeight;
+      //if(j === 2) y = 20 + (abacusCtrl.beadPerLine+2) * abacusCtrl.beadHeight;
+      //ctx.beginPath();
+      //ctx.moveTo(20, y);
+      //ctx.lineTo(640, y);
+      //ctx.stroke();
+    //}
+    //ctx.lineWidth = 1;
     
     // draws all nodes
     drawBeads(ctx);
