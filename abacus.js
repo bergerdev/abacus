@@ -164,8 +164,8 @@ function Abacus(parentDivId, type) {
       if(nodeId === hooveredBead) {
         ctx.fillStyle=hooveredBeadColor;
       } 
-      drawRoundRectFilled(ctx, dn.x, dn.y, dn.x2-dn.x, dn.y2-dn.y, 15);
-      ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
+      //drawRoundRectFilled(ctx, dn.x, dn.y, dn.x2-dn.x, dn.y2-dn.y, 15);
+      //ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
       
     uiElements.push(dn);
     if (false) {
